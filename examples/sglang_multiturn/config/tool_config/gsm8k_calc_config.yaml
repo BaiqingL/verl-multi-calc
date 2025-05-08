@@ -1,0 +1,15 @@
+tools:
+  - class_name: "verl.tools.gsm8k_calc.CalculatorTool"
+    config: {}
+    tool_schema:
+      type: "function"
+      function:
+        name: "perform_calculation"
+        description: "A tool for performing basic arithmetic calculations (addition, subtraction, multiplication, division). Returns the result."
+        parameters:
+          type: "object"
+          properties:
+            expression:
+              type: "string"
+              description: "The mathematical expression to evaluate (e.g., '2 + 3', '10 * 5', '20 / 4')"
+          required: ["expression"] 
